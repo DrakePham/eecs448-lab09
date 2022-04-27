@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="background"></div>
+        <form action="customerBackend.php" method="post">
+            <div>
+                <label >Your Account</label><br>
+                Username: <input type="email" name="username" id="username"><br>
+                Password: <input type="text" name="password" id="password"><br><br>
+            </div>
+            
+            <div>
+                <h3>Food Store</h3>
+                <label>Banana, $5:</label><br>
+                Amount: <input type="number" id="Banana" name="Banana" min="0"><br><br>
+
+                <label>Apple, $10:</label><br>
+                Amount: <input type="number" id="Apple" name="Apple" min="0"><br><br>
+
+                <label>Watermelon, $15:</label><br>
+                Amount: <input type="number" id="Watermelon" name="Watermelon" min="0"><br><br>
+
+            </div>
+
+            
+            <div>
+                <label>Choose your shipping option:</label><br>
+                <input type="radio" name="shipping" id="free" value="Free 7 Day">Free 7 Day<br>
+                <input type="radio" name="shipping" id="50" value="$50 Over Night">$50.00 Over Night<br>
+                <input type="radio" name="shipping" id="5" value="$5 Three Day">$5.00 Three Day<br>
+            </div>
+            
+            <input type="submit" id="submit" value="Submit Quiz">
+            <input type="reset">
+        </form>
+    </main>
+
+
+    <script src="formChecker.js"></script>
+</body>
+</html>
